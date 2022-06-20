@@ -24,7 +24,6 @@ int main()
     list2.choosing_operation();
     list3.choosing_operation();
     
-    
     std::cout << std::endl << "Your results below\n";
     std::cout << list1 << list2 << list3 << std::endl;
     
