@@ -153,7 +153,7 @@ bool List<T>::empty()
 }
 
 template<typename T>
-void List<T>::insert(T& value, std::size_t position)
+void List<T>::insert( T& value, std::size_t position)
 {
     if((position < 0) || (position > size_of_list))
     {

@@ -1,0 +1,13 @@
+
+# operators  
+  * operator =  (copy) - դիտարկված չէ ինքնավերագրման տարբերակը 
+  * operator = ( move) - դիտարկված չէ ,որ "move" ֊ը դատարկ չէ
+#functions
+  * insert () - արգումենտը սովորական  թիվ չի ընդունում , պետք է conct լինի ։
+
+  # operators  
+  * operator =  (copy) - The version of self-attribution is not considered 
+  * operator = ( move) - It is not observed that "move" is not empty
+#functions
+  * insert () -The argument does not take an ordinary number, it must be conct.
+  

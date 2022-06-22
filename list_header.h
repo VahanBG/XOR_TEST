@@ -16,26 +16,26 @@ class List
 public:
     template <typename N>
     friend std::ostream& operator << (std::ostream& COUT, const List<N>& oth);
-    List() = default;
-    List(const T&);
-    List(const std::initializer_list<T>&);
-    List(const List<T>&);
-    List(List<T>&&);
-    List& operator = (const List<T>&);
-    List& operator = (List<T> &&);
-    List& choosing_operation();
-    List& choose(int);
+    List() = default; // ok
+    List(const T&); // 
+    List(const std::initializer_list<T>&); //ok
+    List(const List<T>&); //ok
+    List(List<T>&&); //ok
+    List& operator = (const List<T>&); //wrong
+    List& operator = (List<T> &&); //wrong
+    List& choosing_operation(); //ok
+    List& choose(int);//ok
     ~List();
     
-    void insert(T&, std::size_t);
-    void size();
-    void push_front(const T&);
-    void push_back(const T&);
-    void pop_front();
-    void pop_back();
-    bool empty();
-    void clear();
-    void traverse();
+    void insert( T&, std::size_t); //ok
+    void size();//ok
+    void push_front(const T&); //ok
+    void push_back(const T&);//ok
+    void pop_front();//ok
+    void pop_back();//ok
+    bool empty();//ok
+    void clear();//ok
+    void traverse();//ok
     
     void swap(List&);
     void print_forward();
